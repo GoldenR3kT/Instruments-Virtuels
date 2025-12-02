@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Example mini synth</title>
+    <link href="./css/styles.css" rel="stylesheet" />
+    <script src="./libs/webaudiocontrols.js"></script>
+    <script type="module" src="./js/script.js"></script>
+</head>
+
+<body>
+    <h1>Welcome to the Example mini synth</h1>
+
+    <!-- Boutons start et stop -->
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+    <br>
+    <webaudio-keyboard id="kbd"></webaudio-keyboard>
+    <br>
+
+    <div class="mainContainer">
+        <!-- OSCILLATEUR 1-->
+        <div id="oscillatorPanel1" class="panel">
+            <webaudio-knob id="freqKnob1" src="assets/images/knobs/Jambalaya.png" sprites="100" diameter="70"
+                style="height: 70px;" value=440 min=100 max=4000 step="1">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Frequency</label>
+            <br>
+            <webaudio-knob id="waveformKnob1" src="assets/images/knobs/Jambalaya.png" sprites="100" value="0"
+                diameter="70" style="height: 70px;" min="0" max="3" step="1">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Waveform type</label>
+            <br>
+            <webaudio-knob id="volumeKnob1" src="assets/images/knobs/Jambalaya.png" sprites="100" value="1"
+                diameter="70" style="height: 70px;" min="0" max="1" step="0.01">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Volume</label>
+            <br>
+            <webaudio-knob id="octaveKnob1" src="assets/images/knobs/Jambalaya.png" sprites="100"
+                diameter="70" style="height: 70px;" min="-3" max="3" step="1" value="0">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Octave</label>
+        </div>
+        <!-- OSCILLATEUR 2-->
+        <div id="oscillatorPanel2" class="panel">
+            <webaudio-knob id="freqKnob2" src="assets/images/knobs/Jambalaya.png" sprites="100" diameter="70"
+                style="height: 70px;" value=440 min=100 max=4000 step="1">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Frequency</label>
+            <br>
+            <webaudio-knob id="waveformKnob2" src="assets/images/knobs/Jambalaya.png" sprites="100" value="0"
+                diameter="70" style="height: 70px;" min="0" max="3" step="1">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Waveform type</label>
+            <br>
+            <webaudio-knob id="volumeKnob2" src="assets/images/knobs/Jambalaya.png" sprites="100" value="1"
+                diameter="70" style="height: 70px;" min="0" max="1" step="0.01">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Volume</label>
+            <br>
+            <webaudio-knob id="octaveKnob2" src="assets/images/knobs/Jambalaya.png" sprites="100"
+                diameter="70" style="height: 70px;" min="-3" max="3" step="1" value="0">
+            </webaudio-knob>
+            <br>
+            <label for="oscillatorPanel">Octave</label>
+        </div>
+    </div>
+</body>
+
+</html>
